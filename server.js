@@ -7,7 +7,7 @@ app.use(volleyball);
 
 app.use(express.static(`${__dirname}/public`));
 
-const puppies = [{
+const pusheens = [{
   name: 'Scribble Pusheen',
   image: 'http://68.media.tumblr.com/tumblr_m5mlt6a0EH1qhy6c9o1_400.gif'
 }, {
@@ -24,15 +24,15 @@ const puppies = [{
   image: 'http://68.media.tumblr.com/tumblr_m9hbpdSJIX1qhy6c9o1_400.gif'
 }];
 
-app.get('/api/puppies', function (req, res) {
-  res.json(puppies);
+app.get('/api/pusheens', function (req, res) {
+  res.json(pusheens);
 });
 
-app.get('/api/puppies/:puppyName', function (req, res) {
-  const foundPuppy = puppies.find(function (elem) {
-    return elem.name === req.params.puppyName;
+app.get('/api/pusheens/:pusheenName', function (req, res) {
+  const foundPusheen = pusheens.find(function (elem) {
+    return elem.name === req.params.pusheenName;
   });
-  if (foundPuppy) res.json(foundPuppy);
+  if (foundPusheen) res.json(foundPusheen);
   else res.status(404).end();
 });
 
