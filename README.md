@@ -10,8 +10,8 @@
 ![Alt text](/public/img/1_home.png "Home Page")
 
 ## All Pusheens
-(/public/img/2_all_pusheens.png)
+![Alt text](/public/img/2_all_pusheens.png "All Pusheens")
 
 ## One Pusheen at a time
-(/public/img/3_scribble_pusheen.png)
-(/public/img/4_gangnam_pusheen.png)
+![Alt text](/public/img/3_scribble_pusheen.png "Scribble Pusheen")
+![Alt text](/public/img/4_gangnam_pusheen.png "Gangnam Pusheen")
