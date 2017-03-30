@@ -1,26 +1,31 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-import OnePusheen from './OnePusheen';
+/**
+ * This App Component should be the home page where we first see the "All the Pusheens" link
+ */
 
 class App extends React.Component {
   constructor () {
     super();
-    this.state = {
-      selectedPusheen: {}
-    };
   }
+
   render () {
     return (
       <div>
         <div>
-          <Link
-            to='/all-pusheens'>
-            <h1> All the Pusheens </h1>
-          </Link>
+          {
+            /*
+            Show a link called "All the Pusheens" that will present a list of all the pusheens when clicked
+            */
+          }
         </div>
         <div>
-          {this.props.children}
+          {
+            /*
+            This area should show 1) list of all the pusheens  or 2) one pusheens
+            */
+          }
         </div>
       </div>
     );
