@@ -2,16 +2,16 @@ import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
 
-class AllPuppies extends React.Component {
+export default class AllPuppies extends React.Component {
   constructor () {
     super();
-    this.state = {puppies: []};
+    this.state = {pusheens: []};
   }
   componentDidMount () {
-    axios.get('/api/puppies')
+    axios.get('/api/pusheens')
     .then(response => {
       this.setState({
-        puppies: response.data
+        pusheens: response.data
       });
     });
   }
@@ -19,11 +19,11 @@ class AllPuppies extends React.Component {
     return (
       <div>
         <ul>
-          {this.state.puppies.map(puppy => {
+          {this.state.pusheens.map(pusheen => {
             return (
-              <li key={puppy.name}>
-                <Link to={`/one-puppy/${puppy.name}`}>
-                  {puppy.name}
+              <li key={pusheen.name}>
+                <Link to={`/one-pusheen/${pusheen.name}`}>
+                  {pusheen.name}
                 </Link>
               </li>
             );
@@ -34,4 +34,3 @@ class AllPuppies extends React.Component {
   }
 }
 
-export default AllPuppies;

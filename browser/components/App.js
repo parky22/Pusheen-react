@@ -1,31 +1,25 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-import OnePuppy from './OnePuppy';
+import OnePusheen from './OnePusheen';
 
 class App extends React.Component {
   constructor () {
     super();
     this.state = {
-      selectedPuppy: {}
+      selectedPusheen: {}
     };
   }
   render () {
     return (
       <div>
-        <div className='dev-border'>
+        <div>
           <Link
-            className='dev-border'
-            to='/all-puppies'>
-            Show me ALL THE PUPPIES
-          </Link>
-          <Link
-            className='dev-border'
-            to='/about'>
-            What are you about?
+            to='/all-pusheens'>
+            <h1> All the Pusheens </h1>
           </Link>
         </div>
-        <div className='dev-border'>
+        <div>
           {this.props.children}
         </div>
       </div>
