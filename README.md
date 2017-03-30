@@ -7,7 +7,7 @@
 3. In another terminal, start the server by doing `npm start`.
 
 ## Homepage
-(/public/img/1_home.png)
+![Alt text](/public/img/1_home.png "Home Page")
 
 ## All Pusheens
 (/public/img/2_all_pusheens.png)
