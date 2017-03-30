@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-import OnePuppy from './OnePuppy';
+import OnePuppy from './OnePusheen';
 
 class App extends React.Component {
   constructor () {

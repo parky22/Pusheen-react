@@ -3,19 +3,16 @@ import ReactDOM from 'react-dom';
 import {Router, hashHistory, Route} from 'react-router';
 
 import App from './components/App';
-import AllPuppies from './components/AllPuppies';
+import AllPusheens from './components/AllPusheens';
 import About from './components/About';
-import OnePuppy from './components/OnePuppy';
-
-// frontend routes: everything related to the UI, navigable links, etc
-// backend routes: data and static files, background requests
+import OnePusheen from './components/OnePusheen';
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={App}>
-      <Route path='/all-puppies' component={AllPuppies} />
+      <Route path='/all-puppies' component={AllPusheens} />
       <Route path='/about' component={About} />
-      <Route path='/one-puppy/:name' component={OnePuppy} />
+      <Route path='/one-puppy/:name' component={OnePusheen} />
     </Route>
   </Router>,
   document.getElementById('app')

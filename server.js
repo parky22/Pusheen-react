@@ -8,20 +8,20 @@ app.use(volleyball);
 app.use(express.static(`${__dirname}/public`));
 
 const puppies = [{
-  name: 'Taylor',
-  image: 'http://www.pusheen.com/image/157403461581'
+  name: 'Scribble Pusheen',
+  image: 'http://68.media.tumblr.com/tumblr_m5mlt6a0EH1qhy6c9o1_400.gif'
 }, {
-  name: 'Reggie',
-  image: 'http://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/puppy-2_0.jpg'
+  name: 'Cheetos Pusheen',
+  image: 'http://68.media.tumblr.com/tumblr_lhlrmysKTU1qhy6c9o1_400.gif'
 }, {
-  name: 'Christian',
-  image: 'https://www.askideas.com/media/19/Papillon-Puppy-Looking.jpg'
+  name: 'Lazy Pusheen',
+  image: 'http://68.media.tumblr.com/tumblr_lzzo5mbgWH1qhy6c9o1_r1_400.gif'
 }, {
-  name: 'Jessie',
-  image: 'http://www.101dogbreeds.com/wp-content/uploads/2015/10/Chi-Spaniel-Puppy-Pictures.jpg'
+  name: 'Too Hot Pusheen',
+  image: 'http://68.media.tumblr.com/tumblr_m6gpp528yc1qhy6c9o1_400.gif'
 }, {
-  name: 'Pandora',
-  image: 'http://4.bp.blogspot.com/-3JeIxWBU7bY/UKjIt8lVpCI/AAAAAAAABx8/YM8piSOwczs/s1600/Schipperke-Puppy.jpg'
+  name: 'Gangnam Pusheen',
+  image: 'http://68.media.tumblr.com/tumblr_m9hbpdSJIX1qhy6c9o1_400.gif'
 }];
 
 app.get('/api/puppies', function (req, res) {
