@@ -4,8 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "continuous-build": "webpack --config webpack.config.js --watch"
+    "start": "webpack --config webpack.config.js -w & nodemon server.js"
   },
   "keywords": [],
   "author": "",
