@@ -16,7 +16,9 @@ class App extends React.Component {
         <h1 style={{textAlign: 'center'}}> Welcome to React with Pusheen! </h1>
         <hr />
         <div>
-          <h3> 1. Change me to a "All the Pusheens" link </h3>
+          <Link to="/allPusheens">
+            <h3> All Pusheens </h3>
+          </Link>
           {
             /*
             Show a link called "All the Pusheens" that will present a list of all the pusheens when clicked
@@ -26,11 +28,11 @@ class App extends React.Component {
         </div>
         <hr />
         <div>
-          <h3> 2. Change this area so that it can switch between a list of all Pusheens and a single Pusheen </h3>
           {
             /*
             This area should show 1) list of all the pusheens  or 2) one pusheens
             */
+            this.props.children
           }
         </div>
       </div>

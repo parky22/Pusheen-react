@@ -14,6 +14,8 @@ import OnePusheen from './components/OnePusheen';
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={App}>
+      <Route path='/allPusheens' component={AllPusheens} />
+      <Route path='/singlePusheen/:pusheenName' component={OnePusheen} />
     </Route>
   </Router>,
   document.getElementById('app')

@@ -2,15 +2,24 @@ import React from 'react';
 import axios from 'axios';
 
 export default class OnePusheen extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      clickedPusheen: {}
+    }
+  }
 
-  render () {
+  componentDidMount(){
+    let name = this.props.params.pusheenName;
+    axios.get(`/api/pusheens/${name}`)
+      .then(res => this.setState({clickedPusheen: res.data}));
+  }
+
+  render(){
     return (
       <div>
-        {
-          /**
-           * Show the one pusheen's name and the GIF
-           */
-        }
+        <h4>{this.state.clickedPusheen.name}</h4>
+        <img src={this.state.clickedPusheen.image} />
       </div>
     );
   }
